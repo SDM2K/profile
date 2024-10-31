@@ -1,0 +1,86 @@
+@import "./variables.scss";
+
+@mixin genColorVar {
+    @each $name, $val in $color-pallet {
+        --color-#{$name}: #{$val};
+    }
+}
+
+@mixin genColorClass {
+    @each $name, $val in $color-pallet {
+        .color-#{$name} {
+            color: #{$val};
+        }
+        .bg-#{$name} {
+            background-color: #{$val};
+        }
+        .border-#{$name} {
+            --border-color: #{$val};
+        }
+    }
+}
+
+@mixin genSizeVar {
+    @each $name, $val in $sizes {
+        --size-#{$name}: #{$val};
+    }
+}
+
+@mixin genSizeClass {
+    @each $name, $val in $sizes {
+        .m-#{$name} {
+            margin: #{$val};
+        }
+        .ms-#{$name} {
+            margin-inline-start: #{$val};
+        }
+        .me-#{$name} {
+            margin-inline-end: #{$val};
+        }
+        .mt-#{$name} {
+            margin-top: #{$val};
+        }
+        .mb-#{$name} {
+            margin-bottom: #{$val};
+        }
+        .mx-#{$name} {
+            margin-inline: #{$val};
+        }
+        .my-#{$name} {
+            margin-block: #{$val};
+        }
+        .p-#{$name} {
+            padding: #{$val};
+        }
+        .ps-#{$name} {
+            padding-inline-start: #{$val};
+        }
+        .pe-#{$name} {
+            padding-inline-end: #{$val};
+        }
+        .pt-#{$name} {
+            padding-top: #{$val};
+        }
+        .pb-#{$name} {
+            padding-bottom: #{$val};
+        }
+        .px-#{$name} {
+            padding-inline: #{$val};
+        }
+        .py-#{$name} {
+            padding-block: #{$val};
+        }
+        .gap-#{$name} {
+            gap: #{$val};
+        }
+        .row-gap-#{$name} {
+            row-gap: #{$val};
+        }
+        .column-gap-#{$name} {
+            column-gap: #{$val};
+        }
+        .font-#{$name} {
+            font-size: #{$val};
+        }
+    }
+}

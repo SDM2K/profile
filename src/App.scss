@@ -1,0 +1,21 @@
+.App {
+    height: 100dvh;
+}
+
+.App-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+@import "./styles/mixins.scss";
+
+:root {
+    @include genColorVar();
+    @include genSizeVar();
+}
+
+@include genColorClass();
+@include genSizeClass();
+
+@import "./styles/classes.scss";

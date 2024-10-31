@@ -1,0 +1,34 @@
+// Border classes
+.border {
+    border: var(--border-size, 1px) var(--border-style, solid) var(--border-color, transparent);
+}
+
+.border-top {
+    border-top: var(--border-size, 1px) var(--border-style, solid) var(--border-color, transparent);
+}
+
+.border-bottom {
+    border-bottom: var(--border-size, 1px) var(--border-style, solid) var(--border-color, transparent);
+}
+
+.border-start {
+    border-inline-start: var(--border-size, 1px) var(--border-style, solid) var(--border-color, transparent);
+}
+
+.border-end {
+    border-inline-end: var(--border-size, 1px) var(--border-style, solid) var(--border-color, transparent);
+}
+
+.border-x {
+    border-inline: var(--border-size, 1px) var(--border-style, solid) var(--border-color, transparent);
+}
+
+.border-y {
+    border-block: var(--border-size, 1px) var(--border-style, solid) var(--border-color, transparent);
+}
+
+// Container
+.container {
+    max-width: 1920px;
+    margin-inline: auto;
+}
