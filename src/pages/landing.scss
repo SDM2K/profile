@@ -1,0 +1,49 @@
+.landing-page {
+    min-height: 100dvh;
+}
+
+.poster {
+    background-image: url(../../public/assets/images/poster.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, .6);
+        z-index: -1;
+        pointer-events: none;
+        backdrop-filter: blur(2px);
+    }
+
+    &_content {´
+        img {
+            width: 300px;
+            display: block;
+            margin-inline: auto;
+        }
+    }
+}
+
+.profile-image {
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    margin-inline: auto;
+    scale: 1.8;
+
+    img {
+        display: block;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+    }
+}

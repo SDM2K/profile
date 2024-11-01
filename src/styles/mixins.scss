@@ -14,7 +14,7 @@
         .bg-#{$name} {
             background-color: #{$val};
         }
-        .border-#{$name} {
+        .border-color-#{$name} {
             --border-color: #{$val};
         }
     }
@@ -81,6 +81,9 @@
         }
         .font-#{$name} {
             font-size: #{$val};
+        }
+        .border-#{$name} {
+            --border-size: #{$val};
         }
     }
 }
