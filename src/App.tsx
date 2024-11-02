@@ -1,8 +1,9 @@
-import './App.scss';
-import Header from './components/Header';
-import Landing from './pages/landing';
+import Header from '@components/Header'
+import Landing from '@pages/landing'
+import './App.scss'
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,7 +13,7 @@ function App() {
         <Landing />
       </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

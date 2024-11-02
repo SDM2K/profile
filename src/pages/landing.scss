@@ -3,7 +3,7 @@
 }
 
 .poster {
-    background-image: url(../../public/assets/images/poster.jpg);
+    background-image: url(/assets/images/poster.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +24,7 @@
         backdrop-filter: blur(2px);
     }
 
-    &_content {´
+    &_content {
         img {
             width: 300px;
             display: block;
