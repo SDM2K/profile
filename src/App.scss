@@ -2,7 +2,10 @@
 @use "./styles/classes.scss" as *;
 
 .App {
-    height: 100dvh;
+    min-height: 100dvh;
+    background-color: var(--color-2);
+    color: var(--color-light);
+    font-family: monospace, sans-serif;
 }
 
 .App-header {

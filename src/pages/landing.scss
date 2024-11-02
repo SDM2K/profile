@@ -47,3 +47,12 @@
         border-radius: inherit;
     }
 }
+
+.intro-name {
+    font-family: fantasy;
+}
+
+.intro-desc {
+    width: clamp(300px, 60%, 800px);
+    text-align: justify;
+}
